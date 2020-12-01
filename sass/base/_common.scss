@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  @include fonts-body(18px, 1.71, 0.2em);
+  color: $main-text-cl;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.had {
+  background-color: $wight-text;
+  height: 80px;
+}
+.hag-port {
+  background-color: $wight-text;
+  border: 1px solid #ececec;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-nav {
+  display: inline-flex;
+}
+
+.nav .link.current {
+  color: $link-text-cl;
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  width: 110%;
+  height: 4px;
+  background-color: $link-text-cl;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -32px;
+  left: -3px;
+}

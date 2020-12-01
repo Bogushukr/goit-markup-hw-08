@@ -1,0 +1,17 @@
+.logo {
+  font-family: Raleway;
+  @include fonts-logo(700, 26px, 1.192, 0.03em);
+  color: #2196f3;
+  text-decoration: none;
+}
+.logo-second {
+  font-family: Raleway;
+  @include fonts-logo(700, 26px, 1.192, 0.03em);
+  color: #212121;
+}
+
+.logo-container {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}

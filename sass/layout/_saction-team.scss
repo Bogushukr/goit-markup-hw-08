@@ -1,0 +1,78 @@
+.section-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black-text;
+
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.container-time {
+  display: inline-flex;
+  padding-left: 215px;
+  padding-right: 0;
+}
+
+.section-team {
+  width: 1600px;
+  height: 648px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.team-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black-text;
+
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team {
+  background-color: $team-fon;
+}
+
+.team h4 {
+  padding-top: 94px;
+}
+
+.team p {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-text-cl;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.conainer-time-item {
+  width: 270px;
+  height: 428px;
+  margin-right: 30px;
+  padding-bottom: 30px;
+  background-color: $wight-text;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}

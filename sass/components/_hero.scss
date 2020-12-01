@@ -1,0 +1,38 @@
+.container-hero {
+  width: 1600px;
+  margin: 0 auto;
+  padding-left: 15spx;
+  padding-right: 15px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+  height: 600px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/application-team.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 452px;
+  margin-right: 452px;
+  padding-top: 200px;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $wight-text;
+  width: 696px;
+}

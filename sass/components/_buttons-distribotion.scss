@@ -1,0 +1,37 @@
+.btn-cellar {
+  display: inline-block;
+  border: none;
+  padding-right: 62px;
+  padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $wight-text;
+  background: $link-text-cl;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  margin-right: auto;
+
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  position: relative;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: $link-text-cl;
+    background: $wight-text;
+    border: 2px solid $link-text-cl;
+  }
+
+  &:focus .cellar-form-svg,
+  &:hover .cellar-form-svg {
+    fill: $link-text-cl;
+  }
+}
