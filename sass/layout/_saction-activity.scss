@@ -7,6 +7,24 @@
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .contsiner-activity {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contsiner-activity {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contsiner-activity {
+    display: flex;
+  }
+}
+
 .container-activity img {
   margin-right: 30px;
 }

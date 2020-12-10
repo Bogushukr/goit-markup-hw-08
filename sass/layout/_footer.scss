@@ -19,6 +19,14 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .cellar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .footer-logo {
   font-family: Raleway;
   font-weight: 700;
