@@ -21,8 +21,28 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+
+  @include for-size(mobile) {
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(tablet) {
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .btn-position {
   padding-bottom: 210px;
+
+  @include for-size(mobile) {
+    padding-bottom: 118px;
+  }
+
+  @include for-size(tablet) {
+    padding-bottom: 118px;
+  }
 }

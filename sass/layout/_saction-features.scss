@@ -208,6 +208,14 @@
 .section-features {
   background-color: $wight-text;
   margin-bottom: 94px;
+
+  @include for-size(mobile) {
+    margin-bottom: 60px;
+  }
+
+  @include for-size(tablet) {
+    margin-bottom: 60px;
+  }
 }
 
 .text {

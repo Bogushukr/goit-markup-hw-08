@@ -4,14 +4,45 @@
   color: #2196f3;
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .logo {
+    @include fonts-logo(700, 24px, 1.192, 0.03em);
+  }
+}
+
 .logo-second {
   font-family: Raleway;
   @include fonts-logo(700, 26px, 1.192, 0.03em);
   color: #212121;
 }
 
-.logo-container {
-  margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+@media screen and (max-width: 768px) {
+  .logo-second {
+    @include fonts-logo(700, 24px, 1.192, 0.03em);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo-container {
+    margin-right: 15px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-container {
+    margin-right: 15px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-container {
+    margin-right: 93px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
 }

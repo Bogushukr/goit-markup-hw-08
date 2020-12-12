@@ -1,5 +1,10 @@
+.had {
+  background-color: $wight-text;
+  height: 80px;
+}
+
 .nav {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -8,7 +13,14 @@
   text-decoration: none;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    justify-content: flex-start;
+  }
 }
 
 .contacts-emil-svg {
@@ -41,12 +53,24 @@
 
 .cotacts-nav {
   color: $main-text-cl;
-
+  display: none;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .cotacts-nav {
+    display: block;
+  }
 }
 
 .cotacts-nav .link + .link {
   margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .cotacts-nav .link + .link {
+    margin-left: 0;
+  }
 }
 
 .link {
@@ -63,8 +87,14 @@
 .menu-nav {
   margin-top: 0;
   margin-bottom: 0;
-  display: inline-flex;
+  display: none;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav {
+    display: inline-flex;
+  }
 }
 
 .menu-item {
@@ -75,4 +105,28 @@
 
 .menu-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.mobile-menu-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu-btn.is-open {
+  background-color: green;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 9px;
+  left: 9px;
+  right: 0;
+  bottom: 0;
+  fill: $black-text;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-btn {
+    display: block;
+  }
 }

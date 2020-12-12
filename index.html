@@ -12,7 +12,7 @@
 <body>
 
     <!--hat-->
-    <!-- <header class="had">
+    <header class="had">
         <div class="container">
             <nav class="nav">
                 <a class="logo logo-container" href="./">Web<span class="logo-second">Studio</span></a>
@@ -21,6 +21,11 @@
                     <li class="menu-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                     <li class="menu-item"><a href="#contacts" class="link">Контакты</a></li>
                 </ul>
+                <button class="mobile-menu-btn" data-menu-button>
+                    <svg class="backdrop-close-svg">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
                 <div class="cotacts-nav">
                 <a class="cotacts-nav-link link" href="mailto:info@devstudio.com">
                     <svg class="contacts-emil-svg">
@@ -33,18 +38,34 @@
                 </div>
             </nav>
         </div>
-    </header> -->
-
+    </header>
+    <div data-menu class="mobile-menu">
+        <ul class="mobile-menu-nav">
+            <li class="mobile-menu-item"><a href="#features" class="link current">Студия</a></li>
+            <li class="mobile-menu-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="mobile-menu-item"><a href="#contacts" class="link">Контакты</a></li>
+        </ul>
+        <div class="mobile-cotacts-nav">
+            <a class="cotacts-mobile-link link" href="mailto:info@devstudio.com">
+                <svg class="contacts-emil-svg">
+                    <use href="./images/sprite.svg#icon-email"></use>
+                </svg>info@devstudio.com</a>
+            <a class="cotacts-mobile-link link" href="tel:+380961111111">
+                <svg class="contacts-phone-svg">
+                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+        </div>
+    </div>
     <!--banner-->
-    <!-- <section class="hero cellar">
+    <section class="hero cellar">
         <div class="container-hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button data-modal-open class="btn" type="button"> Заказать услугу</button>
         </div>
-    </section> -->
+    </section>
 
     <!--features-->
-    <!-- <section class="section-features">
+    <section class="section-features">
         <h2 style="display: none;" id="features">Особенности</h2>
         <div class="container">
             <ul class="container-features">
@@ -78,10 +99,10 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
     <!--activity-->
-    <!-- <section class="contsiner-activity">
+    <section class="contsiner-activity">
         <div class="container">
             <h3 class="section-title">Чем мы занимаемся</h3>
             <div class="container-activity">
@@ -99,15 +120,22 @@
                 </div>               
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!--team-->
-    <!-- <section class="team">
+    <section class="team">
         <div class="section-team">
             <h4 class="section-title">Наша команда</h4>
-            <div class="container-time">
-                <div class="conainer-time-item">
-                    <img src="./images/ihor.jpg" alt="ihor Product Designer" />
+            <ul class="container-time">
+                <li class="conainer-time-item">
+                    <picture>
+                        <source srcset="./images/ihor_mob.jpg 1x, ./images/ihor_mobX2.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <source srcset="./images/ihor_mob.jpg 1x, ./images/ihor_mobX2.jpg 2x" 
+                        media="(min-width: 768px)">
+                        <source srcset="./images/ihor_mob.jpg 1x, ./images/ihor_mobX2.jpg 2x" media="(min-width: 767px)">
+                        <img src="./images/ihor_mob.jpg" alt="ihor Product Designer" />
+                    </picture>
                     <div class="time-box">
                         <b class="team-title">Игорь Демьяненко</b>
                         <p>Product Designer</p>
@@ -134,9 +162,14 @@
                         </a></li>
                     </ul>
                     </div>
-                </div>
-                <div class="conainer-time-item">
-                    <img src="./images/olha.jpg" alt="olha Frontend Developer" />
+                </li>
+                <li class="conainer-time-item">
+                    <picture>
+                        <source srcset="./images/olha_mob.jpg 1x, ./images/olha_mobX2.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/olha_mob.jpg 1x, ./images/olha_mobX2.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/olha_mob.jpg 1x, ./images/olha_mobX2.jpg 2x" media="(min-width: 767px)">
+                        <img src="./images/olha_mob.jpg" alt="olha Frontend Developer" />
+                    </picture>            
                     <div class="time-box">
                         <b class="team-title">Ольга Репина</b>
                         <p>Frontend Developer</p>
@@ -163,9 +196,14 @@
                             </a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="conainer-time-item">
-                    <img src="./images/nikolay.jpg" alt="nikolay Marketing" />
+                </li>
+                <li class="conainer-time-item">
+                    <picture>
+                        <source srcset="./images/nikolay_mob.jpg 1x, ./images/nikolay_mobX2.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/nikolay_mob.jpg 1x, ./images/nikolay_mobX2.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/nikolay_mob.jpg 1x, ./images/nikolay_mobX2.jpg 2x" media="(min-width: 767px)">
+                        <img src="./images/nikolay_mob.jpg" alt="nikolay Marketing" />
+                    </picture>                    
                     <div class="time-box">
                         <b class="team-title">Николай Тарасов</b>
                         <p>Marketing</p>
@@ -196,9 +234,14 @@
                                 </a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="conainer-time-item">
-                    <img src="./images/mikhail.jpg" alt="mikhail UI Designer" />
+                </li>
+                <li class="conainer-time-item">
+                    <picture>
+                        <source srcset="./images/mikhail_mob.jpg 1x, ./images/mikhail_mobX2.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/mikhail_mob.jpg 1x, ./images/mikhail_mobX2.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mikhail_mob.jpg 1x, ./images/mikhail_mobX2.jpg 2x" media="(min-width: 767px)">
+                    <img src="./images/mikhail_mob.jpg" alt="mikhail UI Designer" />
+                    </picture>
                     <div class="time-box">
                         <b class="team-title">Михаил Ермаков</b>
                         <p>UI Designer</p>
@@ -229,14 +272,14 @@
                             </a></li>
                         </ul>
                     </div>
-                </div>
-            </div>          
-        </div> -->
+                </li>
+            </ul>          
+        </div>
     </section>
 
         <!-- partners -->
     <section class="container-partners partners-section">
-        <div class="">
+        <div class="partners-title">
             <h4 class="section-title">Постоянные клиенты</h4>
             <ul class="container-title-part">
                 <li class="partners-icon-item"><a class="partners-icon-link" href="./" target="blank" rel="noreferrer noopener" aria-label="partner one">
@@ -276,6 +319,7 @@
     <!--cellar-->
     <footer class="cellar">
         <div class="container-footer">
+            <div class="footer-tablet">
             <div class="container-footer-pocion">
             <div class="logo-cellar"><a href="index.html" class="link"><span class="footer-logo">Web</span><span
                         class="footer-logo-second">Studio</span></a>
@@ -320,6 +364,7 @@
                         </svg>
                 </a></li>
             </ul>
+        </div>
         </div>
             <div class="social-cellar-form">
                 <form class="cellar-form">
@@ -387,7 +432,11 @@
             </button>
         </div>
     </div>
-    <script src="./js/modal.js">
+    <script 
+    src="./js/modal.js">
+    </script>
+    <script 
+    src="./js/menu.js">
     </script>
 </body>   
 </html>
