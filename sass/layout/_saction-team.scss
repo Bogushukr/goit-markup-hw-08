@@ -48,7 +48,6 @@
 
 .section-team {
   width: 100%;
-  height: 0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -57,14 +56,12 @@
 @media screen and (max-width: 480px) {
   .section-team {
     width: 480px;
-    height: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .section-team {
     width: 768px;
-    height: 0;
   }
 }
 
@@ -152,7 +149,7 @@
 
 .conainer-time-item {
   width: 100%;
-  height: 0;
+
   margin-right: 30px;
   padding-bottom: 30px;
   background-color: $wight-text;

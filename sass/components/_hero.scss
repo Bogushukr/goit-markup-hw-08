@@ -26,7 +26,9 @@
 .hero {
   text-align: center;
   margin-bottom: 94px;
-  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: linear-gradient(
       to right,
@@ -49,17 +51,11 @@
     height: 400px;
     margin-bottom: 60px;
   }
-
-  @include for-size(desktop) {
-    text-align: center;
-    margin-bottom: 94px;
-    height: 600px;
-  }
 }
 
 @media (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    width: 1600px;
     text-align: center;
     margin-bottom: 94px;
     height: 600px;
