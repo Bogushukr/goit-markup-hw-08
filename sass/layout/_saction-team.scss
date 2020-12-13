@@ -24,20 +24,14 @@
 
 .container-time {
   display: inline-flex;
-  padding-left: 215px;
+  padding-left: 0;
   padding-right: 0;
+  margin: 0;
+}
 
-  @include for-size(mobile) {
+@media screen and (max-width: 480px) {
+  .container-time {
     width: 480px;
-    display: flex;
-    flex-wrap: wrap;
-    background-position: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  @include for-size(tablet) {
-    width: 768px;
     display: flex;
     flex-wrap: wrap;
     background-position: center;
@@ -46,22 +40,44 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container-time {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-time {
+    width: 1200px;
+  }
+}
+
 .section-team {
-  width: 100%;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .section-team {
     width: 480px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-team {
     width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    width: 1200px;
   }
 }
 
@@ -95,41 +111,80 @@
 
 .team {
   background-color: $team-fon;
+}
 
-  @include for-size(mobile) {
+@media screen and (max-width: 480px) {
+  .team {
     width: 480px;
     display: flex;
     flex-wrap: wrap;
     background-position: center;
   }
+}
 
-  @include for-size(tablet) {
+@media screen and (min-width: 768px) {
+  .team {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .time-box {
   display: block;
-  width: 450px;
-  height: 162px;
+  width: 100%;
+  // height: 162px;
   margin-left: 0;
   margin-right: 0;
+
+  @include for-size(mobile) {
+    width: 450px;
+  }
+  @include for-size(tablet) {
+    width: 354px;
+  }
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 
 .team h4 {
   padding-top: 94px;
+  width: 100%;
+}
 
-  @include for-size(mobile) {
+@media screen and (max-width: 480px) {
+  .team h4 {
     padding-top: 60px;
     padding-bottom: 30px;
+    width: 480px;
   }
+}
 
-  @include for-size(tablet) {
+@media screen and (min-width: 768px) {
+  .team h4 {
     padding-top: 60px;
     padding-bottom: 30px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team h4 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 1200px;
   }
 }
 
@@ -162,24 +217,23 @@
       margin-right: 0;
     }
   }
-
-  @include for-size(mobile) {
-    &:nth-child(4n) {
-      margin-right: 60px;
-    }
+}
+@media screen and (max-width: 480px) {
+  &:nth-child(4n) {
+    margin-right: 0;
   }
+}
 
-  @include for-size(tablet) {
-    &:nth-child(4n) {
-      margin-right: 60px;
-    }
+@media screen and (max-width: 768px) {
+  &:nth-child(4n) {
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 480px) {
   .conainer-time-item {
-    width: 480px;
-    height: 622px;
+    width: 450px;
+    // height: 622px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 30px;
@@ -188,14 +242,20 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .conainer-time-item {
-    width: 768px;
-    height: 536px;
+    width: 354px;
+    // height: 536px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conainer-time-item {
+    width: 270px;
   }
 }

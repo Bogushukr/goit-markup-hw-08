@@ -57,3 +57,30 @@
     margin-right: 0px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .nav-content {
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .element-cont:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-content {
+    width: 768px;
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-content {
+    width: 1200px;
+    border-top: 1px solid #ececec;
+  }
+}

@@ -1,5 +1,5 @@
 .container-partners {
-  max-width: 1200px;
+  max-width: 100%;
   min-width: 480px;
   padding-left: 0;
   padding-right: 0;
@@ -50,6 +50,9 @@
 
 .partners-title {
   width: 480px;
+
+  margin-left: auto;
+  margin-right: auto;
 
   @include for-size(tablet) {
     width: 768px;
