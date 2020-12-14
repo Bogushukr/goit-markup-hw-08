@@ -11,7 +11,8 @@
   @include for-size(mobile) {
     .container-footer {
       width: 480px;
-      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   @include for-size(tablet) {
@@ -55,6 +56,7 @@
     padding-top: 60px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -102,9 +104,20 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .footer-tablet {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-tablet {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     margin-bottom: 0;
     margin-top: 0;

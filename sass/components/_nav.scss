@@ -26,8 +26,16 @@
   width: 16px;
   height: 12px;
   fill: $main-text-cl;
-  margin-right: 7px;
+  margin-right: 10px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-emil-svg {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
 }
 
 .contacts-phone-svg {
@@ -36,6 +44,14 @@
   fill: $main-text-cl;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-phone-svg {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
 }
 
 .cotacts-nav-link:hover .contacts-emil-svg,
