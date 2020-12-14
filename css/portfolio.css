@@ -823,6 +823,9 @@ img {
   .item-features:nth-child(4n) {
     margin-right: 0;
   }
+  .item-features:nth-child(2n) {
+    margin-right: 30px;
+  }
 }
 
 .icon-one::before {
