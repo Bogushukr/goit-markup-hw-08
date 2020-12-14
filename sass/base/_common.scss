@@ -38,19 +38,23 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @include for-size(tablet) {
-    width: 768px;
-  }
-
-  @include for-size(desktop) {
-    width: 1200px;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .container {
     width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 

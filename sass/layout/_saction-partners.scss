@@ -1,8 +1,6 @@
 .container-partners {
   max-width: 100%;
   min-width: 480px;
-  padding-left: 0;
-  padding-right: 0;
 
   @include for-size(mobile) {
     width: 480px;
@@ -67,7 +65,7 @@
 .container-title-part {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   flex-basis: calc(100% / 2 - 30px);
   margin: 0;
   padding-left: 0;
@@ -143,8 +141,12 @@
   }
 }
 .partners-icon-item {
-  width: 170px;
+  width: 210px;
   height: 90px;
+  margin-bottom: 30px;
+  &:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
 
   @include for-size(mobile) {
     width: 210px;
@@ -163,14 +165,14 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  .partners-icon-item {
-    margin-bottom: 30px;
-    &:nth-child(n + 5) {
-      margin-bottom: 0;
-    }
-  }
-}
+// @media screen and (min-width: 480px) {
+//   .partners-icon-item {
+//     // margin-right: 30px;
+//   }
+//   &:nth-child(n + 5) {
+//     margin-bottom: 0;
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .partners-icon-item {

@@ -1,3 +1,10 @@
+.team {
+  background-color: $team-fon;
+  @include for-size(mobile) {
+    width: 480px;
+  }
+}
+
 .section-title {
   font-family: "Roboto";
   font-weight: 700;
@@ -6,7 +13,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $black-text;
-
+  // width: 100%;
   padding-bottom: 50px;
   margin-bottom: 0;
   margin-top: 0;
@@ -23,7 +30,8 @@
 }
 
 .container-time {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   padding-right: 0;
   margin: 0;
@@ -57,10 +65,11 @@
 }
 
 .section-team {
-  width: 1200px;
-  margin-left: auto;
+  width: 100%;
   margin-right: auto;
-  margin-top: 0px;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -93,52 +102,6 @@
   display: block;
   margin-top: 30px;
   margin-bottom: 10px;
-
-  @include for-size(mobile) {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-    display: block;
-  }
-
-  @include for-size(tablet) {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-    display: block;
-  }
-}
-
-.team {
-  background-color: $team-fon;
-}
-
-@media screen and (max-width: 480px) {
-  .team {
-    width: 480px;
-    display: flex;
-    flex-wrap: wrap;
-    background-position: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team {
-    width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .time-box {
@@ -204,7 +167,7 @@
 
 .conainer-time-item {
   width: 100%;
-
+  margin-bottom: 30px;
   margin-right: 30px;
   padding-bottom: 30px;
   background-color: $wight-text;

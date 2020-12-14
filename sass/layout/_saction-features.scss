@@ -89,35 +89,29 @@
   display: block;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 120px;
+  background: $team-fon;
   margin-bottom: 30px;
+  background-image: url(../images/img-one-mob.png);
+  background-position: center;
+  background-repeat: no-repeat;
 
   @include for-size(mobile) {
-    width: 100%;
-    height: 120px;
-    background: $team-fon;
-    border-radius: 4px;
+    width: 450px;
+
     background-image: url(../images/img-one-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @include for-size(tablet) {
     width: 354px;
-    height: 120px;
-    background: $team-fon;
-    border-radius: 4px;
+
     background-image: url(../images/img-one-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @include for-size(desktop) {
     width: 270px;
-    height: 120px;
+
     background-image: url(../images/img-one.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 
@@ -125,35 +119,30 @@
   display: block;
   content: "";
   width: 100%;
-  height: 100%;
-
+  height: 120px;
+  background: $team-fon;
+  border-radius: 4px;
+  background-image: url(../images/img-two-mob.png);
   margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @include for-size(mobile) {
-    width: 100%;
-    height: 120px;
-    background: $team-fon;
-    border-radius: 4px;
+    width: 450px;
+
     background-image: url(../images/img-two-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @include for-size(tablet) {
     width: 354px;
     height: 120px;
-    background: $team-fon;
-    border-radius: 4px;
+
     background-image: url(../images/img-two-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @include for-size(desktop) {
     width: 270px;
-    height: 120px;
-    background-position: center;
-    background-repeat: no-repeat;
+
     background-image: url(../images/img-two.png);
   }
 }
@@ -162,34 +151,29 @@
   display: block;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 120px;
+  background: $team-fon;
+  border-radius: 4px;
+  background-image: url(../images/img-three-mob.png);
   margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @include for-size(mobile) {
-    width: 100%;
-    height: 120px;
-    background: $team-fon;
-    border-radius: 4px;
+    width: 450px;
+
     background-image: url(../images/img-three-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @include for-size(tablet) {
     width: 354px;
-    height: 120px;
-    background: $team-fon;
-    border-radius: 4px;
+
     background-image: url(../images/img-three-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @include for-size(desktop) {
     width: 270px;
-    height: 120px;
-    background-position: center;
-    background-repeat: no-repeat;
+
     background-image: url(../images/img-three.png);
   }
 }
@@ -198,34 +182,30 @@
   display: block;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
+  background: $team-fon;
+  background-image: url(../images/img-fore-mob.png);
+  background-position: center;
+  background-repeat: no-repeat;
 
   @include for-size(mobile) {
-    width: 100%;
-    height: 120px;
-    background: $team-fon;
+    width: 450px;
+
     border-radius: 4px;
     background-image: url(../images/img-fore-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @include for-size(tablet) {
     width: 354px;
-    height: 120px;
-    background: $team-fon;
-    border-radius: 4px;
+
     background-image: url(../images/img-fore-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @include for-size(desktop) {
     width: 270px;
-    height: 120px;
-    background-position: center;
-    background-repeat: no-repeat;
+
     background-image: url(../images/img-fore.png);
   }
 }
@@ -235,13 +215,6 @@
   margin-bottom: 94px;
 
   @include for-size(tablet) {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    width: 480px;
     margin-bottom: 60px;
   }
 }
@@ -269,6 +242,7 @@
   padding-bottom: 0px;
   margin-bottom: 10px;
   margin-top: 0;
+  text-align: center;
 
   @include for-size(mobile) {
     text-align: center;

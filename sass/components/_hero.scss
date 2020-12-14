@@ -1,62 +1,34 @@
-.container-hero {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
+.fon {
+  background-color: $cellar-fon;
   @include for-size(mobile) {
     width: 480px;
-    margin: 0 auto;
-    padding: 118px 60px 118px 60px;
-  }
-
-  @include for-size(tablet) {
-    width: 768px;
-    margin: 0 auto;
-    padding: 118px 204px 118px 204px;
-  }
-
-  @include for-size(desktop) {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 252px 250px 252px 250px;
   }
 }
 
 .hero {
+  display: block;
   text-align: center;
-  margin-bottom: 94px;
-
-  margin-left: auto;
-  margin-right: auto;
 
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/application-team.jpg);
-  background-position: center;
+    url(../images/application-team-mob480.jpg);
+  width: 480px;
+  height: 400px;
+  background-size: contain;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
 
-  @include for-size(mobile) {
-    width: 100%;
+@media screen and (min-width: 768px) {
+  .hero {
     height: 400px;
-    margin-bottom: 60px;
-
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/application-team-mob480.jpg);
-  }
-
-  @include for-size(tablet) {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 60px;
+    width: 768px;
 
     background-image: linear-gradient(
         to right,
@@ -67,15 +39,10 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 94px;
+    width: 1600px;
     height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
 
     background-image: linear-gradient(
         to right,
@@ -83,61 +50,73 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/application-team.jpg);
+    margin-bottom: 94px;
+  }
+}
+
+.container-hero {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container-hero {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-hero {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-hero {
+    width: 1200px;
+  }
+}
+
+.content {
+  display: block;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @include for-size(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30px;
-  margin-left: 452px;
-  margin-right: 452px;
-  padding-top: 200px;
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $wight-text;
-  width: 696px;
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+}
 
-  @include for-size(mobile) {
-    width: 360px;
-    height: 84px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 26px;
-    text-align: center;
-    padding: 0;
-    display: block;
-    text-transform: uppercase;
+@media screen and (min-width: 768px) {
+  .hero-title {
+    padding-left: 189px;
+    padding-right: 189px;
   }
+}
 
-  @include for-size(tablet) {
-    width: 360px;
-    height: 84px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 26px;
-    text-align: center;
-    padding: 0;
-    display: block;
-    text-transform: uppercase;
-  }
-
-  @include for-size(desktop) {
-    width: 696px;
-    height: 120px;
-    font-family: "Roboto";
-    font-weight: 900;
+@media screen and (min-width: 1200px) {
+  .hero-title {
     font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $wight-text;
-    margin: 0 0 30px 0;
-    justify-content: center;
+    line-height: 1.36em;
+    padding-left: 237px;
+    padding-right: 237px;
   }
 }
