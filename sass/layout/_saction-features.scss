@@ -217,6 +217,10 @@
   @include for-size(tablet) {
     margin-bottom: 60px;
   }
+
+  @include for-size(desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .text {
