@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 480px) {
   .container-time {
-    width: 480px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-position: center;
@@ -50,12 +50,13 @@
 
 @media screen and (min-width: 768px) {
   .container-time {
-    width: 768px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-position: center;
     padding-left: 0;
     padding-right: 0;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -74,7 +75,7 @@
 
 @media screen and (min-width: 480px) {
   .section-team {
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -131,7 +132,7 @@
   .team h4 {
     padding-top: 60px;
     padding-bottom: 30px;
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -139,7 +140,7 @@
   .team h4 {
     padding-top: 60px;
     padding-bottom: 30px;
-    width: 768px;
+    width: 100%;
   }
 }
 
@@ -200,8 +201,6 @@
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
   }
 }
 
@@ -212,8 +211,6 @@
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
   }
 }
 
