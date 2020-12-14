@@ -65,7 +65,7 @@ img {
 
 @media (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 768px;
   }
 }
 
@@ -165,7 +165,6 @@ img {
 
 .had {
   background-color: #ffffff;
-  height: 80px;
 }
 
 .nav {
@@ -191,7 +190,7 @@ img {
   width: 16px;
   height: 12px;
   fill: #757575;
-  margin-right: 10px;
+  margin-right: 7px;
   vertical-align: middle;
 }
 
@@ -1004,7 +1003,7 @@ textarea {
 
 @media (min-width: 768px) {
   .icon-one::before {
-    width: 100%;
+    width: 354px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
@@ -1507,7 +1506,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .conainer-time-item {
     width: 450px;
     margin-right: 0;
@@ -1627,6 +1626,7 @@ textarea {
   .partners-section {
     display: flex;
     width: 1200px;
+    padding-bottom: 0;
   }
 }
 
@@ -1726,24 +1726,51 @@ textarea {
 }
 
 .partners-icon-item {
-  width: 210px;
+  width: 170px;
   height: 90px;
 }
 
+@media (min-width: 480px) {
+  .partners-icon-item {
+    width: 210px;
+    height: 90px;
+  }
+}
+
 @media (min-width: 768px) {
+  .partners-icon-item {
+    width: 226px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .partners-icon-item {
     width: 170px;
     height: 90px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .partners-icon-item:nth-child(2n) {
     margin-right: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .partners-icon-item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .partners-icon-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .partners-icon-item {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -1867,6 +1894,7 @@ textarea {
 @media (min-width: 1200px) {
   .container-footer-pocion {
     margin-right: 70px;
+    margin-left: 0;
   }
 }
 

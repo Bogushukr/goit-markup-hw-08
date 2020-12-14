@@ -40,7 +40,7 @@ img {
   padding-right: 15px;
 
   @include for-size(tablet) {
-    width: 100%;
+    width: 768px;
   }
 
   @include for-size(desktop) {

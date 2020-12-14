@@ -230,7 +230,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .conainer-time-item {
     width: 450px;
     // height: 622px;
