@@ -30,6 +30,13 @@ html {
   box-sizing: border-box;
 }
 
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  outline: 2px solid red;
+}
+
 body {
   font-family: "Roboto";
   font-size: 18px;
@@ -1375,7 +1382,7 @@ textarea {
 
 @media screen and (max-width: 480px) {
   .time-box {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -1544,7 +1551,6 @@ textarea {
 
 .container-partners {
   max-width: 100%;
-  min-width: 480px;
 }
 
 @media screen and (max-width: 480px) {
@@ -1583,7 +1589,7 @@ textarea {
 
 @media (max-width: 480px) {
   .partners-section {
-    width: 480px;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -1598,7 +1604,7 @@ textarea {
 }
 
 .partners-title {
-  width: 480px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1626,7 +1632,7 @@ textarea {
 
 @media screen and (max-width: 480px) {
   .container-title-part {
-    width: 480px;
+    width: 100%;
     height: 100%;
     justify-content: space-between;
     padding-left: 15px;
@@ -1704,7 +1710,7 @@ textarea {
 }
 
 .partners-icon-item {
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   margin-bottom: 30px;
 }
@@ -1715,7 +1721,6 @@ textarea {
 
 @media screen and (max-width: 480px) {
   .partners-icon-item {
-    width: 210px;
     height: 90px;
   }
 }

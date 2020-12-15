@@ -113,7 +113,7 @@
   margin-right: 0;
 
   @include for-size(mobile) {
-    width: 450px;
+    width: 100%;
   }
   @include for-size(tablet) {
     width: 354px;

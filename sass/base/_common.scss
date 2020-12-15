@@ -2,12 +2,12 @@ html {
   box-sizing: border-box;
 }
 
-// *,
-// ::after,
-// ::before {
-//   box-sizing: inherit;
-//   outline: 2px solid red;
-// }
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  outline: 2px solid red;
+}
 
 body {
   font-family: "Roboto";

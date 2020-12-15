@@ -1,6 +1,5 @@
 .container-partners {
   max-width: 100%;
-  min-width: 480px;
 
   @include for-size(mobile) {
     width: 480px;
@@ -33,7 +32,7 @@
 
 @media (max-width: 480px) {
   .partners-section {
-    width: 480px;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -48,7 +47,7 @@
 }
 
 .partners-title {
-  width: 480px;
+  width: 100%;
 
   margin-left: auto;
   margin-right: auto;
@@ -71,7 +70,7 @@
   padding-left: 0;
 
   @include for-size(mobile) {
-    width: 480px;
+    width: 100%;
     height: 100%;
     justify-content: space-between;
     padding-left: 15px;
@@ -146,7 +145,7 @@
 }
 
 .partners-icon-item {
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   margin-bottom: 30px;
   &:nth-child(n + 5) {
@@ -154,7 +153,6 @@
   }
 
   @include for-size(mobile) {
-    width: 210px;
     height: 90px;
   }
   @include for-size(tablet) {
