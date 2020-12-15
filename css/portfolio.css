@@ -844,13 +844,15 @@ img {
 .icon-one::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   margin-bottom: 30px;
   background-image: url(../images/img-one-mob.png);
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -877,7 +879,7 @@ img {
 .icon-two::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -885,6 +887,8 @@ img {
   margin-bottom: 30px;
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -912,7 +916,7 @@ img {
 .icon-three::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -920,6 +924,8 @@ img {
   margin-bottom: 30px;
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -946,7 +952,7 @@ img {
 .icon-fore::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -954,6 +960,8 @@ img {
   background-image: url(../images/img-fore-mob.png);
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 480px) {

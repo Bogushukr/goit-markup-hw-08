@@ -83,13 +83,15 @@
 .icon-one::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 450px;
   height: 120px;
   background: $team-fon;
   margin-bottom: 30px;
   background-image: url(../images/img-one-mob.png);
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 
   @include for-size(mobile) {
     width: 450px;
@@ -113,7 +115,7 @@
 .icon-two::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 450px;
   height: 120px;
   background: $team-fon;
   border-radius: 4px;
@@ -121,6 +123,8 @@
   margin-bottom: 30px;
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 
   @include for-size(mobile) {
     width: 450px;
@@ -145,7 +149,7 @@
 .icon-three::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 450px;
   height: 120px;
   background: $team-fon;
   border-radius: 4px;
@@ -153,6 +157,8 @@
   margin-bottom: 30px;
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 
   @include for-size(mobile) {
     width: 450px;
@@ -176,7 +182,7 @@
 .icon-fore::before {
   display: block;
   content: "";
-  width: 100%;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -184,6 +190,8 @@
   background-image: url(../images/img-fore-mob.png);
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 
   @include for-size(mobile) {
     width: 450px;
