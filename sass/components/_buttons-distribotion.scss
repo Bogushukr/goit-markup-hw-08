@@ -20,7 +20,6 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  position: relative;
   cursor: pointer;
 
   @include for-size(desktop) {
@@ -28,6 +27,10 @@
     display: inline-block;
     margin-left: 12px;
     margin-right: auto;
+    position: absolute;
+    top: 69%;
+    left: 128%;
+    transform: translate(-50%, -50%) scale(1);
   }
 
   &:focus,

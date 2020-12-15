@@ -61,7 +61,7 @@
 }
 @media screen and (min-width: 1200px) {
   .container-time {
-    width: 1200px;
+    width: 100%;
   }
 }
 
@@ -148,7 +148,7 @@
   .team h4 {
     padding-top: 60px;
     padding-bottom: 30px;
-    width: 1200px;
+    width: 100%;
   }
 }
 
@@ -200,7 +200,12 @@
     // height: 622px;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+
+    img {
+      width: 450px;
+      height: 460px;
+    }
   }
 }
 
@@ -211,11 +216,23 @@
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 30px;
+    padding-bottom: 24px;
+
+    img {
+      width: 354px;
+      height: 374px;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conainer-time-item {
     width: 270px;
+    margin-bottom: 94px;
+
+    img {
+      width: 270px;
+      height: 260px;
+    }
   }
 }

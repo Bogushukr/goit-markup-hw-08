@@ -273,7 +273,6 @@ img {
   .cotacts-nav .link + .link {
     margin-left: 0;
     margin-top: 10px;
-    margin-bottom: 21px;
   }
 }
 
@@ -1087,7 +1086,6 @@ img {
   .cellar .container-footer {
     width: 1200px;
     display: flex;
-    align-items: baseline;
     padding: 60px 15px;
     margin: 0;
     margin-right: auto;
@@ -1336,6 +1334,12 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 1200px) {
+  .cellar-form {
+    position: absolute;
+  }
+}
+
 .input-cellar-form {
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1398,7 +1402,6 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  position: relative;
   cursor: pointer;
 }
 
@@ -1408,6 +1411,10 @@ img {
     display: inline-block;
     margin-left: 12px;
     margin-right: auto;
+    position: absolute;
+    top: 69%;
+    left: 128%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

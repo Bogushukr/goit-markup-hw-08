@@ -13,9 +13,9 @@
 .cellar-form {
   display: block;
 
-  // @include for-size(desktop) {
-  //   display: inline-table;
-  // }
+  @include for-size(desktop) {
+    position: absolute;
+  }
 }
 
 .input-cellar-form {
