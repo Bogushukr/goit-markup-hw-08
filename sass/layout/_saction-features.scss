@@ -102,7 +102,7 @@
   margin-right: auto;
 
   @include for-size(mobile) {
-    width: 450px;
+    width: 100%;
 
     background-image: url(../images/img-one-mob.png);
   }
@@ -135,7 +135,7 @@
   margin-right: auto;
 
   @include for-size(mobile) {
-    width: 450px;
+    width: 100%;
 
     background-image: url(../images/img-two-mob.png);
   }
@@ -169,7 +169,7 @@
   margin-right: auto;
 
   @include for-size(mobile) {
-    width: 450px;
+    width: 100%;
 
     background-image: url(../images/img-three-mob.png);
   }
@@ -202,7 +202,7 @@
   margin-right: auto;
 
   @include for-size(mobile) {
-    width: 450px;
+    width: 100%;
 
     border-radius: 4px;
     background-image: url(../images/img-fore-mob.png);

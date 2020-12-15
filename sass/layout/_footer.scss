@@ -1,7 +1,7 @@
 .cellar {
   background-color: $cellar-fon;
   @include for-size(mobile) {
-    width: 480px;
+    width: 100%;
   }
 
   @include for-size(tablet) {

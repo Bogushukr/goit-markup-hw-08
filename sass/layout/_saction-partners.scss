@@ -140,6 +140,11 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+.partners-icon-link a {
+  margin: 0;
+}
+
 .partners-icon-item {
   width: 210px;
   height: 90px;
@@ -164,15 +169,6 @@
     height: 90px;
   }
 }
-
-// @media screen and (min-width: 480px) {
-//   .partners-icon-item {
-//     // margin-right: 30px;
-//   }
-//   &:nth-child(n + 5) {
-//     margin-bottom: 0;
-//   }
-// }
 
 @media screen and (min-width: 768px) {
   .partners-icon-item {
