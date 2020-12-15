@@ -148,13 +148,13 @@
   max-width: 210px;
   height: 90px;
   margin-bottom: 30px;
-  &:nth-child(n + 5) {
-    margin-bottom: 0;
-  }
 
   @include for-size(mobile) {
     height: 90px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   @include for-size(tablet) {
     width: 226px;
     height: 90px;
