@@ -233,12 +233,18 @@
 }
 
 .cellar-form-svg {
-  position: absolute;
-  top: 50%;
-  left: 80%;
+  position: relative;
+  top: -50%;
+  left: 85%;
   width: 24px;
   height: 24px;
   fill: $wight-text;
 
   transform: translate(-50%, -50%);
+
+  @include for-size(desktop) {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+  }
 }

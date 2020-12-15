@@ -1307,13 +1307,21 @@ img {
 }
 
 .cellar-form-svg {
-  position: absolute;
-  top: 50%;
-  left: 80%;
+  position: relative;
+  top: -50%;
+  left: 85%;
   width: 24px;
   height: 24px;
   fill: #ffffff;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1200px) {
+  .cellar-form-svg {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+  }
 }
 
 .social-cellar-form {
